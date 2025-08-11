@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Request Form</title>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const productName = document.getElementById('productName').value;
+            const measurements = document.getElementById('measurements').value;
+            const productImage = document.getElementById('productImage').files[0];
+
+            // Create a FormData object to hold the form data
+            const formData = new FormData();
+            formData.append('productName', productName);
+            formData.append('measurements', measurements);
+            formData.append('productImage', productImage);
+
+            // Log the data to the console (you can replace this with your own handling logic)
+            console.log('Product Name:', productName);
+            console.log('Measurements:', measurements);
+            console.log('Product Image:', productImage);
+
+            // Here you can add code to send the data to your server or handle it as needed
+        }
+    </script>
+</head>
+<body>
+    <h1>Product Request Form</h1>
+    <form onsubmit="handleSubmit(event)">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" required>
+        
+        <label for="measurements">Measurements (e.g., Length x Width x Height):</label>
+        <input type="text" id="measurements" name="measurements" required>
+        
+        <label for="productImage">Upload Product Image:</label>
+        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+        
+        <input type="submit" value="Submit Request">
+    </form>
+</body>
+</html>
