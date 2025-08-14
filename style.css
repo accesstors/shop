@@ -1,0 +1,71 @@
+body {
+  font-family: serif; /* Changed to a serif font */
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f0; /* Light beige background */
+  color: #333; /* Dark gray text */
+}
+
+header, footer {
+  background-color: #d8d0c2; /* Light brown for header/footer */
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid #b0a896; /* Subtle border */
+}
+
+header h1 {
+  font-size: 2.5em; /* Larger heading */
+  margin-bottom: 5px;
+}
+
+header p {
+  font-style: italic;
+  color: #555;
+}
+
+main {
+  padding: 30px;
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff; /* White background for products */
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+.product p {
+  margin-bottom: 10px;
+}
+
+.snipcart-add-item {
+  background-color: #776b5a; /* Brown button */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.snipcart-add-item:hover {
+  background-color: #605547; /* Darker brown on hover */
+}
+
+footer {
+  border-top: 2px solid #b0a896;
+  border-bottom: none;
+}
