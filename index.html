@@ -10,9 +10,7 @@
   <header>
     <h1>Welcome to My Store!</h1>
     <nav>
-      <a href="#">Toys</a> |
-      <a href="#">Bags</a> |
-      <a href="#">Clothes</a>
+      <!-- Removed Category Links -->
     </nav>
   </header>
 
@@ -31,8 +29,58 @@
   <!-- Snipcart script, REQUIRED -->
   <script async src="https://cdn.snipcart.com/themes/v3.4.0/default/snipcart.js"></script>
 
-  <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY"></div>
+  <div hidden id="snipcart" data-api-key="MjgzMWY4YzgtMzNmZS00MDFmLTk3NDAtODhkM2FjYTNjYjFjNjM4OTA3OTk5NTE2NDQzOTQ0"></div>
 
-  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const productData = [
+        {
+          id: 'toy-1',
+          name: 'Teddy Bear',
+          price: 15.00,
+          description: 'A cuddly teddy bear.',
+          imageUrl: 'images/teddy-bear.jpg',  // Make sure this image exists!
+        },
+        {
+          id: 'bag-1',
+          name: 'Canvas Tote Bag',
+          price: 25.00,
+          description: 'A stylish and durable tote bag.',
+          imageUrl: 'images/tote-bag.jpg', // Make sure this image exists!
+        },
+        {
+          id: 'clothes-1',
+          name: 'Cotton T-Shirt',
+          price: 20.00,
+          description: 'A comfortable cotton t-shirt.',
+          imageUrl: 'images/t-shirt.jpg', // Make sure this image exists!
+        }
+      ];
+
+      const productListContainer = document.getElementById('product-list');
+
+      productData.forEach(product => {
+        const productElement = document.createElement('div');
+        productElement.classList.add('product'); // Add a CSS class for styling
+
+        productElement.innerHTML = `
+          <img src="${product.imageUrl}" alt="${product.name}">
+          <h3>${product.name}</h3>
+          <p>$${product.price.toFixed(2)}</p>
+          <button class="snipcart-add-item"
+            data-item-id="${product.id}"
+            data-item-name="${product.name}"
+            data-item-price="${product.price}"
+            data-item-url="/"  <!-- Replace with actual product URL if you had it -->
+            data-item-description="${product.description}"
+            data-item-image="${product.imageUrl}">
+            Add to Cart
+          </button>
+        `;
+
+        productListContainer.appendChild(productElement);
+      });
+    });
+  </script>
 </body>
 </html>
