@@ -1,0 +1,65 @@
+[
+  {
+    "id": "toy-001",
+    "name": "Classic Teddy Bear",
+    "price": 24.99,
+    "description": "A timeless teddy bear made with soft, huggable materials.",
+    "imageUrl": "images/teddy-bear.jpg"
+  },
+  {
+    "id": "toy-002",
+    "name": "Wooden Train Set",
+    "price": 39.99,
+    "description": "A high-quality wooden train set with colorful and durable tracks.",
+    "imageUrl": "images/wooden-train-set.jpg"
+  },
+  {
+    "id": "toy-003",
+    "name": "Superhero Action Figure",
+    "price": 19.99,
+    "description": "A fully articulated superhero action figure with accessories.",
+    "imageUrl": "images/superhero-action-figure.jpg"
+  },
+  {
+    "id": "bag-001",
+    "name": "Canvas Tote Bag",
+    "price": 29.99,
+    "description": "A durable and stylish canvas tote bag for everyday use.",
+    "imageUrl": "images/canvas-tote-bag.jpg"
+  },
+  {
+    "id": "bag-002",
+    "name": "Leather Messenger Bag",
+    "price": 99.99,
+    "description": "A premium leather messenger bag with multiple compartments.",
+    "imageUrl": "images/leather-messenger-bag.jpg"
+  },
+  {
+    "id": "bag-003",
+    "name": "Waterproof Backpack",
+    "price": 59.99,
+    "description": "A lightweight and waterproof backpack perfect for outdoor adventures.",
+    "imageUrl": "images/waterproof-backpack.jpg"
+  },
+  {
+    "id": "clothes-001",
+    "name": "Cotton T-Shirt (White)",
+    "price": 14.99,
+    "description": "A comfortable and breathable cotton t-shirt in a classic white color.",
+    "imageUrl": "images/white-tshirt.jpg"
+  },
+  {
+    "id": "clothes-002",
+    "name": "Denim Jeans (Slim Fit)",
+    "price": 49.99,
+    "description": "Stylish slim-fit denim jeans made with high-quality materials.",
+    "imageUrl": "images/slim-fit-jeans.jpg"
+  },
+  {
+    "id": "clothes-003",
+    "name": "Wool Sweater (Navy)",
+    "price": 69.99,
+    "description": "A warm and cozy wool sweater perfect for colder weather.",
+    "imageUrl": "images/navy-wool-sweater.jpg"
+  }
+]
